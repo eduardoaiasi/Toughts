@@ -41,10 +41,6 @@ module.exports = class ToughtsController {
       title: req.body.title,
       UserId: req.session.userid
     };
-
-    if(title === ''){
-      req.flash('message', 'O campo não pode ser vazio');
-    }
    
     try {
       await Tought.create(tought);

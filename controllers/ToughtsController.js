@@ -43,7 +43,7 @@ module.exports = class ToughtsController {
     };
 
     if(title === ''){
-      req.flash('message', 'O campo não pode s')
+      req.flash('message', 'O campo não pode ser vazio');
     }
    
     try {
